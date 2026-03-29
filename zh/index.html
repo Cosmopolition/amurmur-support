@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>语生 Amumur 支持</title>
+  <script>
+    (function() {
+      const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      let target = '../en/privacy.html';
+
+      if (userLang.startsWith('zh')) target = 'privacy.html';
+      else target = '../en/privacy.html';
+
+      const basePath = window.location.pathname.replace(/\/zh\/.*$/, '/zh/').replace(/\/$/, '/zh/');
+      window.location.replace(basePath + target);
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=./privacy.html">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
