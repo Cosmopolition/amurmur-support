@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amumur Privacy Policy</title>
+  <script>
+    (function() {
+      const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      let target = '/en/privacy.html';
+
+      if (userLang.startsWith('zh')) target = '/zh/privacy.html';
+
+      const basePath = window.location.pathname.replace(/\/privacy\.html$/, '').replace(/\/$/, '');
+      window.location.replace(basePath + target);
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=./en/privacy.html">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Amumur Terms of Service</title>
+  <script>
+    (function() {
+      const userLang = (navigator.language || navigator.userLanguage || 'en').toLowerCase();
+      let target = '/en/terms.html';
+
+      if (userLang.startsWith('zh')) target = '/zh/terms.html';
+
+      const basePath = window.location.pathname.replace(/\/terms\.html$/, '').replace(/\/$/, '');
+      window.location.replace(basePath + target);
+    })();
+  </script>
+  <noscript>
+    <meta http-equiv="refresh" content="0;url=./en/terms.html">
+  </noscript>
+</head>
+<body>
+  <p>Redirecting...</p>
+</body>
+</html>
