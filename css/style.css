@@ -93,6 +93,32 @@ header {
   background: rgba(99, 102, 241, 0.1);
 }
 
+/* Main Navigation */
+header nav:not(.lang-switch) {
+  display: flex;
+  gap: 4px;
+  margin-right: 24px;
+}
+
+header nav:not(.lang-switch) a {
+  color: var(--color-text-muted);
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  transition: all 0.2s ease;
+}
+
+header nav:not(.lang-switch) a:hover {
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+header nav:not(.lang-switch) a.active {
+  color: var(--color-primary);
+  background: rgba(99, 102, 241, 0.1);
+}
+
 /* Main Content */
 main {
   padding: 48px 0;
